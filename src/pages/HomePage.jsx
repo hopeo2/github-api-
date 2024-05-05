@@ -24,7 +24,7 @@ const HomePage = () => {
                     {
                         headers: {
                             authorization: `token ${
-                                process.env.VITE_VERCEL_GITHUB_API_KEY
+                                import.meta.env.VITE_VERCEL_GITHUB_API_KEY
                             }`,
                         },
                     }

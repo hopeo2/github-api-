@@ -14,7 +14,7 @@ const ExplorePage = () => {
         try {
             const res = await fetch(`https://api.github.com/search/repositories?q={language}:${language}&sort=stars&order=desc&per_page=10`, {
                 headers: {
-                    authorization: `token ${process.env.VITE_VERCEL_GITHUB_API_KEY}`
+                    authorization: `token ${import.meta.env.VITE_VERCEL_GITHUB_API_KEY}`
                 }
             });
             
